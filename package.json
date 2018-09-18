@@ -1,0 +1,25 @@
+{
+  "name": "angstrom",
+  "version": "1.2",
+  "description": "TBD",
+  "license": "GPLv3",
+  "esy": {
+    "build": [
+      "jbuilder build -p angstrom -j4"
+    ],
+    "install": [
+      "esy-installer"
+    ],
+    "buildsInSource": "_build"
+  },
+  "dependencies": {
+    "@opam/jbuilder": "*",
+    "@opam/bigstringaf": "*"
+  },
+  "peerDependencies": {
+    "ocaml": "~4.6.0"
+  },
+  "devDependencies": {
+    "ocaml": "~4.6.0"
+  }
+}
