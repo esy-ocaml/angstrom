@@ -14,10 +14,8 @@
   },
   "dependencies": {
     "@opam/jbuilder": "*",
-    "@opam/bigstringaf": "*"
-  },
-  "peerDependencies": {
-    "ocaml": "~4.6.0"
+    "@opam/bigstringaf": "*",
+    "ocaml": ">=4.3.0"
   },
   "devDependencies": {
     "ocaml": "~4.6.0"
