@@ -5,7 +5,7 @@
   "license": "GPLv3",
   "esy": {
     "build": [
-      "jbuilder build -p angstrom -j4"
+      "dune build -p angstrom -j4"
     ],
     "install": [
       "esy-installer"
@@ -13,7 +13,7 @@
     "buildsInSource": "_build"
   },
   "dependencies": {
-    "@opam/jbuilder": "*",
+    "@opam/dune": "*",
     "@opam/bigstringaf": "*",
     "ocaml": ">=4.3.0"
   },

@@ -1,0 +1,278 @@
+{
+  "checksum": "92a609d02079c7b0be43bd741acd7a6e",
+  "root": "angstrom@link-dev:./package.json",
+  "node": {
+    "ocaml@4.6.1000@d41d8cd9": {
+      "id": "ocaml@4.6.1000@d41d8cd9",
+      "name": "ocaml",
+      "version": "4.6.1000",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-4.6.1000.tgz#sha1:99525ef559353481396454f9a072dedc96b52f44"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "angstrom@link-dev:./package.json": {
+      "id": "angstrom@link-dev:./package.json",
+      "name": "angstrom",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@opam/dune@opam:2.7.1@f5f493bc",
+        "@opam/bigstringaf@opam:0.6.1@35f5e6d1"
+      ],
+      "devDependencies": [ "ocaml@4.6.1000@d41d8cd9" ]
+    },
+    "@opam/ocamlfind-secondary@opam:1.8.1@1afa38b2": {
+      "id": "@opam/ocamlfind-secondary@opam:1.8.1@1afa38b2",
+      "name": "@opam/ocamlfind-secondary",
+      "version": "opam:1.8.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/18/18ca650982c15536616dea0e422cbd8c#md5:18ca650982c15536616dea0e422cbd8c",
+          "archive:http://download2.camlcity.org/download/findlib-1.8.1.tar.gz#md5:18ca650982c15536616dea0e422cbd8c",
+          "archive:http://download.camlcity.org/download/findlib-1.8.1.tar.gz#md5:18ca650982c15536616dea0e422cbd8c"
+        ],
+        "opam": {
+          "name": "ocamlfind-secondary",
+          "version": "1.8.1",
+          "path": "esy.lock/opam/ocamlfind-secondary.1.8.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride":
+            "esy.lock/overrides/opam__s__ocamlfind_secondary_opam__c__1.8.1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "@opam/ocamlfind@opam:1.8.1@ff07b0f9",
+        "@opam/ocaml-secondary-compiler@opam:4.08.1-1@85df5d8f",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "@opam/ocamlfind@opam:1.8.1@ff07b0f9",
+        "@opam/ocaml-secondary-compiler@opam:4.08.1-1@85df5d8f"
+      ]
+    },
+    "@opam/ocamlfind@opam:1.8.1@ff07b0f9": {
+      "id": "@opam/ocamlfind@opam:1.8.1@ff07b0f9",
+      "name": "@opam/ocamlfind",
+      "version": "opam:1.8.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/18/18ca650982c15536616dea0e422cbd8c#md5:18ca650982c15536616dea0e422cbd8c",
+          "archive:http://download2.camlcity.org/download/findlib-1.8.1.tar.gz#md5:18ca650982c15536616dea0e422cbd8c",
+          "archive:http://download.camlcity.org/download/findlib-1.8.1.tar.gz#md5:18ca650982c15536616dea0e422cbd8c"
+        ],
+        "opam": {
+          "name": "ocamlfind",
+          "version": "1.8.1",
+          "path": "esy.lock/opam/ocamlfind.1.8.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride":
+            "esy.lock/overrides/opam__s__ocamlfind_opam__c__1.8.1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@opam/conf-m4@opam:1@3b2b148a",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "ocaml@4.6.1000@d41d8cd9" ]
+    },
+    "@opam/ocaml-secondary-compiler@opam:4.08.1-1@85df5d8f": {
+      "id": "@opam/ocaml-secondary-compiler@opam:4.08.1-1@85df5d8f",
+      "name": "@opam/ocaml-secondary-compiler",
+      "version": "opam:4.08.1-1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/72/723b6bfe8cf5abcbccc6911143f71055#md5:723b6bfe8cf5abcbccc6911143f71055",
+          "archive:https://github.com/ocaml/ocaml/archive/4.08.1.tar.gz#md5:723b6bfe8cf5abcbccc6911143f71055"
+        ],
+        "opam": {
+          "name": "ocaml-secondary-compiler",
+          "version": "4.08.1-1",
+          "path": "esy.lock/opam/ocaml-secondary-compiler.4.08.1-1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride":
+            "esy.lock/overrides/opam__s__ocaml_secondary_compiler_opam__c__4.08.1_1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "ocaml@4.6.1000@d41d8cd9" ]
+    },
+    "@opam/dune@opam:2.7.1@f5f493bc": {
+      "id": "@opam/dune@opam:2.7.1@f5f493bc",
+      "name": "@opam/dune",
+      "version": "opam:2.7.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/c3/c3528f2f8b3a2e3fe18e166fc823e6caeee8b7c78ade6b6fe4d2fa978070925d#sha256:c3528f2f8b3a2e3fe18e166fc823e6caeee8b7c78ade6b6fe4d2fa978070925d",
+          "archive:https://github.com/ocaml/dune/releases/download/2.7.1/dune-2.7.1.tbz#sha256:c3528f2f8b3a2e3fe18e166fc823e6caeee8b7c78ade6b6fe4d2fa978070925d"
+        ],
+        "opam": {
+          "name": "dune",
+          "version": "2.7.1",
+          "path": "esy.lock/opam/dune.2.7.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride":
+            "esy.lock/overrides/opam__s__dune_opam__c__2.7.1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "ocaml@4.6.1000@d41d8cd9",
+        "@opam/ocamlfind-secondary@opam:1.8.1@1afa38b2",
+        "@opam/base-unix@opam:base@87d0b2eb",
+        "@opam/base-threads@opam:base@36803084",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.6.1000@d41d8cd9",
+        "@opam/ocamlfind-secondary@opam:1.8.1@1afa38b2",
+        "@opam/base-unix@opam:base@87d0b2eb",
+        "@opam/base-threads@opam:base@36803084"
+      ]
+    },
+    "@opam/conf-m4@opam:1@3b2b148a": {
+      "id": "@opam/conf-m4@opam:1@3b2b148a",
+      "name": "@opam/conf-m4",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "conf-m4",
+          "version": "1",
+          "path": "esy.lock/opam/conf-m4.1"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/bigstringaf@opam:0.6.1@35f5e6d1": {
+      "id": "@opam/bigstringaf@opam:0.6.1@35f5e6d1",
+      "name": "@opam/bigstringaf",
+      "version": "opam:0.6.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/dc/dccf639273b1eec0e0f142f21319268d#md5:dccf639273b1eec0e0f142f21319268d",
+          "archive:https://github.com/inhabitedtype/bigstringaf/archive/0.6.1.tar.gz#md5:dccf639273b1eec0e0f142f21319268d"
+        ],
+        "opam": {
+          "name": "bigstringaf",
+          "version": "0.6.1",
+          "path": "esy.lock/opam/bigstringaf.0.6.1"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@opam/dune@opam:2.7.1@f5f493bc",
+        "@opam/bigarray-compat@opam:1.0.0@1faefa97",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@opam/dune@opam:2.7.1@f5f493bc",
+        "@opam/bigarray-compat@opam:1.0.0@1faefa97"
+      ]
+    },
+    "@opam/bigarray-compat@opam:1.0.0@1faefa97": {
+      "id": "@opam/bigarray-compat@opam:1.0.0@1faefa97",
+      "name": "@opam/bigarray-compat",
+      "version": "opam:1.0.0",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/1c/1cc7c25382a8900bada34aadfd66632e#md5:1cc7c25382a8900bada34aadfd66632e",
+          "archive:https://github.com/mirage/bigarray-compat/archive/v1.0.0.tar.gz#md5:1cc7c25382a8900bada34aadfd66632e"
+        ],
+        "opam": {
+          "name": "bigarray-compat",
+          "version": "1.0.0",
+          "path": "esy.lock/opam/bigarray-compat.1.0.0"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@opam/dune@opam:2.7.1@f5f493bc",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.6.1000@d41d8cd9", "@opam/dune@opam:2.7.1@f5f493bc"
+      ]
+    },
+    "@opam/base-unix@opam:base@87d0b2eb": {
+      "id": "@opam/base-unix@opam:base@87d0b2eb",
+      "name": "@opam/base-unix",
+      "version": "opam:base",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "base-unix",
+          "version": "base",
+          "path": "esy.lock/opam/base-unix.base"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/base-threads@opam:base@36803084": {
+      "id": "@opam/base-threads@opam:base@36803084",
+      "name": "@opam/base-threads",
+      "version": "opam:base",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "base-threads",
+          "version": "base",
+          "path": "esy.lock/opam/base-threads.base"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@esy-ocaml/substs@0.0.1@d41d8cd9": {
+      "id": "@esy-ocaml/substs@0.0.1@d41d8cd9",
+      "name": "@esy-ocaml/substs",
+      "version": "0.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/@esy-ocaml/substs/-/substs-0.0.1.tgz#sha1:59ebdbbaedcda123fc7ed8fb2b302b7d819e9a46"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
