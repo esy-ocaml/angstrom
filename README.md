@@ -1,3 +1,8 @@
+# Fork no longer needed
+
+After https://github.com/esy/esy/pull/1237
+
+
 # Angstrom
 
 Angstrom is a parser-combinator library that makes it easy to write efficient,
